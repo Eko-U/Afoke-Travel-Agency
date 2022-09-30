@@ -1,0 +1,31 @@
+@mixin hover-color($color) {
+  background-color: $color;
+}
+
+//DIFFERENT BREAKPOINT
+/*
+  0-600em ----------- phone
+  600px - 900 --------tablet portrait
+  900 - 1200 --------- tablet landscape
+  1200 --- 1800px ------ desktop
+  1800px ----- upward ------big desktop
+*/
+
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 35.7em) { @content };
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) { @content };
+  }
+
+  @if $breakpoint == big-screen {
+    @media only screen and (min-width: 112.5em) { @content };
+  }
+}

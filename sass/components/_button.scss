@@ -1,0 +1,55 @@
+.btn {
+  border: none;
+  &,
+  &:link,
+  &:visited {
+    padding: 1.3rem 5rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &--blue {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+
+    &:hover {
+      @include hover-color(var(--color-primary-light));
+    }
+  }
+
+  &--round {
+    border-radius: 20rem;
+
+    &-sm {
+      border-radius: .3rem;
+    }
+  }
+
+  &--outline {
+    border: .4rem solid var(--color-primary-dark);
+    color: var(--color-white);
+
+
+  }
+
+  &--text {
+    
+    &:link,
+    &:visited {
+      color: var(--color-primary-dark);
+      display: inline-block;
+      text-align: left;
+      padding: 0;
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  height: 85vh;
+  padding: 0 5rem;
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 10%, rgba(#2f78ae, .2)),
+    url(../img/header-back.jpg);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  &-text {
+    flex: 0 0 60%;
+  }
+}
