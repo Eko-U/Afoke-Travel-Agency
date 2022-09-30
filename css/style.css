@@ -442,6 +442,9 @@ body {
       padding: 5rem 3rem; } }
   .section-news .heading-secondary {
     font-size: 2.5rem; }
+    @media only screen and (max-width: 35.7em) {
+      .section-news .heading-secondary {
+        font-size: 2.2rem; } }
   .section-news__content {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 50%, transparent 50%), url(../img/news-bk.jpg);
     background-size: cover;
@@ -451,13 +454,12 @@ body {
     padding: 5rem; }
     @media only screen and (max-width: 35.7em) {
       .section-news__content {
+        padding: 3rem;
         background-image: none;
         background-color: #fff; } }
-  .section-news__box {
-    width: 45%; }
-    @media only screen and (max-width: 35.7em) {
-      .section-news__box {
-        width: 100%; } }
+  @media only screen and (max-width: 35.7em) {
+    .section-news__box {
+      width: 100%; } }
   .section-news .form-news {
     font-size: 1.6rem;
     gap: 1rem; }
@@ -466,6 +468,10 @@ body {
     .section-news .form-news__input,
     .section-news .form-news .privacy-policy {
       width: 90%; }
+      @media only screen and (max-width: 35.7em) {
+        .section-news .form-news__input,
+        .section-news .form-news .privacy-policy {
+          width: 100%; } }
     .section-news .form-news__btn {
       display: inline-block; }
     .section-news .form-news__label {
@@ -504,6 +510,9 @@ body {
       row-gap: 10rem; } }
   .section-app__text {
     flex: 0 0 50%; }
+  @media only screen and (max-width: 35.7em) {
+    .section-app .app-link > *:not(:last-child) {
+      margin-bottom: 1rem; } }
 
 .section-review {
   padding: 10rem 7rem;
