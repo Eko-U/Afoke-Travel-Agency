@@ -1,9 +1,11 @@
 .section-about {
   padding: 10rem 7rem;
   background-color: #f4f4f4;
+
+  @include responsive(tab-port) {
+    padding: 5rem 3rem;
+  }
 }
-
-
 
 .about-us {
   display: flex;
@@ -51,12 +53,15 @@
   padding: 10rem 7rem;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
 
+  @include responsive(tab-port) {
+      padding: 5rem 3rem;
+  }
+
   .heading-secondary {
     font-size: 2.5rem;
   }
 
   &__content {
-    height: 60vh;
     background-image: linear-gradient(105deg, rgba(255, 255, 255, .95) 0%, rgba(255, 255, 255, .95) 50%, transparent 50%), url(../img/news-bk.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,28 +69,40 @@
     display: flex;
     align-items: center;
     padding: 5rem;
+
+    @include responsive(phone) {
+      background-image: none;
+      background-color: #fff;
+    }
+
   }
 
   &__box {
     width: 45%;
+    @include responsive(phone) {
+      width: 100%;
+    }
   }
 
   .form-news {
-    display: flex;
-    flex-direction: column;
     font-size: 1.6rem;
     gap: 1rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
 
     &__input,
     .privacy-policy {
       width: 90%;
     }
 
-    .btn {
-      width: 40%;
+    &__btn {
+      display: inline-block;
     }
 
     &__label {
+      display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 700;
@@ -122,6 +139,10 @@
   justify-content: center;
   column-gap: 20rem;
 
+  @include responsive(tab-port) {
+      padding: 5rem 3rem;
+  }
+
   @include responsive(tab-land) {
     flex-direction: column;
     row-gap: 10rem;
@@ -136,6 +157,10 @@
 .section-review {
   padding: 10rem 7rem;
   background-color: #f4f4f4;
+
+  @include responsive(tab-port) {
+      padding: 5rem 3rem;
+    }
 }
 
 .review {
@@ -197,6 +222,9 @@
 
 .section-place {
   padding: 10rem 7rem;
+  @include responsive(tab-port) {
+    padding: 5rem 3rem;
+  }
 }
 
 .location {
