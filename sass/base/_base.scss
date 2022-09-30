@@ -9,8 +9,16 @@
 html {
   font-size: 62.5%;
 
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+
   @include responsive(tab-port) {
     font-size: 50%;
+  }
+
+  @include responsive(big-sreen) {
+    font-size: 70%;
   }
 }
 

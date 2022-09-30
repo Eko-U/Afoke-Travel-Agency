@@ -22,6 +22,11 @@
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 50em) {
+      margin-right: 1rem;
+    }
   }
 
   &__list {
@@ -29,6 +34,10 @@
     list-style: none;
     display: flex;
     gap: 5rem;
+
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
   }
 
   &__item {
@@ -92,10 +101,13 @@
   }
 
   &__menu {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     fill: var(--color-primary-dark);
     display: none;
+    @media only screen and (max-width: 50em) {
+      display: block;
+    }
   }
 
   &__list {

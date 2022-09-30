@@ -26,6 +26,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -55,6 +58,9 @@ body {
     font-weight: 300;
     color: var(--color-white);
     text-transform: uppercase; }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--main {
+        font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2.5rem;
@@ -67,6 +73,9 @@ body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-clip: text;
   color: transparent; }
+  @media only screen and (max-width: 34.75em) {
+    .heading-secondary {
+      font-size: 2rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -154,10 +163,11 @@ body {
 .header-form {
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
   flex: 1;
-  max-width: 90rem;
   background-color: var(--color-white);
-  border-radius: 1rem;
-  overflow: hidden; }
+  border-radius: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .header-form {
+      flex: none; } }
   .header-form__box {
     padding: 3rem;
     display: flex;
@@ -261,8 +271,15 @@ body {
   display: flex;
   align-items: center;
   gap: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      flex-direction: column;
+      justify-content: center; } }
   .header-text {
     flex: 0 0 60%; }
+    @media only screen and (max-width: 75em) {
+      .header-text {
+        flex: 0; } }
 
 .navigation-top, .navigation-down {
   max-width: 135rem;
@@ -281,13 +298,20 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 3rem; }
+  gap: 3rem;
+  margin-right: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .navigation-down {
+      margin-right: 1rem; } }
 
 .navigation__list {
   align-self: stretch;
   list-style: none;
   display: flex;
   gap: 5rem; }
+  @media only screen and (max-width: 50em) {
+    .navigation__list {
+      display: none; } }
 
 .navigation__item {
   display: flex;
@@ -329,10 +353,13 @@ body {
     fill: var(--color-white);
     transition: all .2s; }
   .icon__menu {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     fill: var(--color-primary-dark);
     display: none; }
+    @media only screen and (max-width: 50em) {
+      .icon__menu {
+        display: block; } }
   .icon__list {
     align-self: stretch;
     display: flex;

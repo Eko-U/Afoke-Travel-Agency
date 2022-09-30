@@ -13,7 +13,16 @@
   align-items: center;
   gap: 5rem;
 
+  @include responsive(tab-land) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &-text {
     flex: 0 0 60%;
+
+    @include responsive(tab-land) {
+      flex: 0;
+    }
   }
 }
