@@ -34,15 +34,23 @@ body {
     background-clip: text;
     color: transparent;
 
-    @media only screen and (max-width: 34.75em) {
-      font-size: 2rem;
-    }
+  // @include responsive (tab-land) {
+  //   text-align: left !important;
+  // }
+
+  @include responsive(tab-port) {
+    font-size: 3rem;
+  }
 }
 
 .heading-tertiary {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
+
+  @include responsive(tab-port) {
+    font-size: 1.8rem;
+  }
 }
 
 .paragraph {

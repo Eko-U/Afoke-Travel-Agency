@@ -7,16 +7,34 @@
 
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
+
+  @include responsive(tab-port) {
+    row-gap: 1rem;
+  }
 
   &__details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include responsive(tab-port) {
+      flex-direction: column;
+      row-gap: 1rem;
+      align-items: flex-start;
+    }
+
   }
 
   &__list {
     display: flex;
     column-gap: 2rem;
     list-style: none;
+
+    @include responsive(phone) { 
+      flex-direction: column; 
+      row-gap: 1rem;
+    }
   }
 
   &__link {
@@ -52,5 +70,9 @@
     font-size: 1.2rem;
     text-align: center;
     padding: .8rem;
+
+    @include responsive(phone) {
+      padding: .4rem;
+    }
   }
 }
