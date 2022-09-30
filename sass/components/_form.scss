@@ -21,11 +21,8 @@
   box-shadow: 0 3rem 3rem rgba(0,0,0,.4);
   flex: 1;
   
-  // max-width: 90rem;
-  // min-height: 100rem;
   background-color: var(--color-white);
   border-radius: 1rem;
-  // overflow: hidden;
 
   @include responsive(tab-port) {
     flex: none;

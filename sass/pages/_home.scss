@@ -12,6 +12,10 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 4rem;
+
+  @media only screen and (max-width: 23.75em) {
+    flex-direction: column;
+  }
   
 
   &__detail {
@@ -249,7 +253,6 @@
   column-gap: 4rem;
   row-gap: 6rem;
   
-
   &__recommend {
     position: absolute;
     top: 0;

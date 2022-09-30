@@ -17,6 +17,10 @@ html {
     font-size: 50%;
   }
 
+  @media only screen and (max-width: 20em) {
+    font-size: 31.25%;
+  }
+
   @include responsive(big-sreen) {
     font-size: 70%;
   }
