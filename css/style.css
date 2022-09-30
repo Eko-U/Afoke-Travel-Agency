@@ -276,7 +276,7 @@ body {
     display: flex;
     column-gap: 2rem;
     list-style: none; }
-    @media only screen and (max-width: 35.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__list {
         flex-direction: column;
         row-gap: 1rem; } }
@@ -302,7 +302,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
     padding: .8rem; }
-    @media only screen and (max-width: 35.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__copyright {
         padding: .4rem; } }
 
@@ -469,7 +469,7 @@ body {
       padding: 5rem 3rem; } }
   .section-news .heading-secondary {
     font-size: 2.5rem; }
-    @media only screen and (max-width: 35.5em) {
+    @media only screen and (max-width: 37.5em) {
       .section-news .heading-secondary {
         font-size: 2.2rem; } }
   .section-news__content {
@@ -479,15 +479,18 @@ body {
     display: flex;
     align-items: center;
     padding: 5rem; }
-    @media only screen and (max-width: 35.5em) {
+    @media only screen and (max-width: 37.5em) {
       .section-news__content {
         padding: 3rem;
         background-image: none;
         background-color: #fff; } }
-  @media only screen and (max-width: 35.5em) {
-    .section-news__box {
-      width: 100%; } }
+  .section-news__box {
+    width: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .section-news__box {
+        width: 100%; } }
   .section-news .form-news {
+    width: 90%;
     font-size: 1.6rem;
     gap: 1rem; }
     .section-news .form-news > *:not(:last-child) {
@@ -495,7 +498,7 @@ body {
     .section-news .form-news__input,
     .section-news .form-news .privacy-policy {
       width: 90%; }
-      @media only screen and (max-width: 35.5em) {
+      @media only screen and (max-width: 37.5em) {
         .section-news .form-news__input,
         .section-news .form-news .privacy-policy {
           width: 100%; } }
@@ -530,14 +533,11 @@ body {
   column-gap: 20rem; }
   @media only screen and (max-width: 56.25em) {
     .section-app {
-      padding: 5rem 3rem; } }
-  @media only screen and (max-width: 75em) {
-    .section-app {
       flex-direction: column;
       row-gap: 10rem; } }
   .section-app__text {
     flex: 0 0 50%; }
-  @media only screen and (max-width: 35.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-app .app-link > *:not(:last-child) {
       margin-bottom: 1rem; } }
 
