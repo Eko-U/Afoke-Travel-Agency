@@ -66,10 +66,7 @@ body {
         font-size: 4rem; } }
     @media only screen and (max-width: 32.5em) {
       .heading-primary--main {
-        font-size: 3.5rem; } }
-    @media only screen and (max-width: 28.75em) {
-      .heading-primary--main {
-        font-size: 2.9rem; } }
+        font-size: 2.8rem; } }
     @media only screen and (max-width: 25em) {
       .heading-primary--main {
         font-size: 2rem; } }
@@ -187,33 +184,6 @@ body {
   .header-form__input--round {
     border-radius: .3rem; }
 
-.header-form {
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
-  flex: 1;
-  background-color: var(--color-white);
-  border-radius: 1rem; }
-  @media only screen and (max-width: 56.25em) {
-    .header-form {
-      flex: none; } }
-  .header-form__box {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; }
-  .header-form__input {
-    background-color: var(--color-input-background);
-    width: 100%; }
-    .header-form__input::placeholder {
-      color: var(--color-input-placeholder);
-      font-weight: 300;
-      opacity: .8; }
-  .header-form .flex-5 {
-    display: flex;
-    gap: 2rem; }
-
-.header-form__submit:hover .icon__aircraft {
-  transform: translateX(0.5rem) rotate(10deg); }
-
 .form__group {
   display: flex;
   gap: 2rem; }
@@ -324,6 +294,32 @@ body {
     @media only screen and (max-width: 75em) {
       .header-text {
         flex: 0; } }
+  .header-form {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    flex: 1;
+    background-color: var(--color-white);
+    border-radius: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .header-form {
+        flex: none; } }
+    .header-form__box {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem; }
+    .header-form__input {
+      background-color: var(--color-input-background);
+      width: 100%; }
+      .header-form__input::placeholder {
+        color: var(--color-input-placeholder);
+        font-weight: 300;
+        opacity: .8; }
+    .header-form .flex-5 {
+      display: flex;
+      gap: 2rem; }
+
+.header-form__submit:hover .icon__aircraft {
+  transform: translateX(0.5rem) rotate(10deg); }
 
 .navigation-top, .navigation-down {
   max-width: 135rem;
@@ -471,7 +467,7 @@ body {
     font-size: 2.5rem; }
     @media only screen and (max-width: 37.5em) {
       .section-news .heading-secondary {
-        font-size: 2.2rem; } }
+        font-size: 2rem; } }
   .section-news__content {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 50%, transparent 50%), url(../img/news-bk.jpg);
     background-size: cover;
@@ -493,6 +489,9 @@ body {
     width: 90%;
     font-size: 1.6rem;
     gap: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-news .form-news {
+        width: 100%; } }
     .section-news .form-news > *:not(:last-child) {
       margin-bottom: 1rem; }
     .section-news .form-news__input,
