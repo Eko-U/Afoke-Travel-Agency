@@ -32,3 +32,13 @@
   justify-content: center;
   gap: .5rem;
 }
+
+//BODY-COPY
+
+.body-copy {
+  font-size: 1.6rem;
+
+  @include responsive(tab-port) {
+    font-size: 1.75rem;
+  }
+}
