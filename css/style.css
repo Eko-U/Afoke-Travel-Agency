@@ -141,7 +141,7 @@ body {
   font-size: 1.6rem; }
   @media only screen and (max-width: 56.25em) {
     .body-copy {
-      font-size: 1.75rem; } }
+      font-size: 1.875rem; } }
 
 .btn {
   border: none; }
@@ -275,7 +275,6 @@ body {
         transform: scale(1.05) rotate(10deg); }
   .footer__copyright {
     color: #cccccc;
-    font-size: 1.2rem;
     text-align: center;
     padding: .8rem; }
     @media only screen and (max-width: 37.5em) {
