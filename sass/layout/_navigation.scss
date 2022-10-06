@@ -1,19 +1,32 @@
+.logo {
+  height: 7.5rem;
+  width: 7.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  z-index: 10;
+}
+
+
 .navigation {
+  position: relative;
+  z-index: 5;
 
   &-top,
   &-down {
     max-width: 135rem;
     margin: auto;
     height: 5rem;
+    
   }
 
   hr {
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(156, 156, 156, 0.1);
   }
 
   &-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 

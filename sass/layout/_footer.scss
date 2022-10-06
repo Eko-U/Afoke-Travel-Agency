@@ -13,6 +13,12 @@
     row-gap: 1rem;
   }
 
+  &__logo {
+    height: 7.5rem;
+    width: 7.5rem;
+    align-self: center;
+  }
+
   &__details {
     display: flex;
     justify-content: space-between;
