@@ -160,7 +160,12 @@
             </div>
           </div>
           <div class="location__box">
-            <img src="img/new_york.jpg" alt="New York City, USA" class="location__img">
+            <picture class="location__img">
+              <source srcset="img/dubia_ph.jpg 1x, img/dubia.jpg 2x" 
+                      media="(max-width: 37.5em)">
+              <img srcset="img/new_york_ph.jpg, img/new_york.jpg" alt="New York City, USA">
+            </picture>
+            
             <div class="location__details">
               <p class="location__price-detail">
                 <span class="location__price">&dollar;945</span>
@@ -256,8 +261,7 @@
               <p class="review__user-name">Micheal Paul</p>
             </div>
             <blockquote class="review__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum
-              soluta nesciunt, officia non libero blanditiis laboriosam dicta sequi quam quis tempora nemo, voluptas esse ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum.
             </blockquote>
           </div>
           <div class="review">
@@ -266,9 +270,7 @@
               <p class="review__user-name">Dorah Austin</p>
             </div>
             <blockquote class="review__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum
-              soluta
-              nesciunt, officia non libero blanditiis laboriosam dicta sequi quam quis tempora nemo, voluptas esse ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum.
             </blockquote>
           </div>
           <div class="review">
@@ -277,9 +279,7 @@
               <p class="review__user-name">Frank Potokri</p>
             </div>
             <blockquote class="review__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum
-              soluta
-              nesciunt, officia non libero blanditiis laboriosam dicta sequi quam quis tempora nemo, voluptas esse ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores eum doloremque quae dolorum.
             </blockquote>
           </div>
         </div>
@@ -312,8 +312,8 @@
         </div>
         <p class="margin-bottom-lg">Benefit from our app-exclusive, offers, seamless booking functions and more. Our App is designed to make your travel experience better. You can book your flight, check in and manage your booking. It has all the features to make your life enjoyable</p>
         <div class="app-link">
-          <a href="#" class="btn btn--blue btn--round">Apple Store</a>
-          <a href="#" class="btn btn--blue btn--round">Play Store</a>
+          <a href="#" class="btn btn--blue btn--round-sm">Apple Store</a>
+          <a href="#" class="btn btn--blue btn--round-sm">Play Store</a>
         </div>
       </div>
       <img src="img/iphone-app.png" alt="Afoke Travel Agency mobile app for users" class="section-app__img">

@@ -50,7 +50,8 @@ body {
 
 body {
   font-family: 'Nunito', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.7; }
 
 .heading-primary {
   line-height: 1.2;
@@ -239,6 +240,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       row-gap: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      row-gap: 2rem; } }
   .footer__logo {
     height: 7.5rem;
     width: 7.5rem;
@@ -634,8 +638,9 @@ body {
     flex-direction: column;
     gap: 1rem; }
   .location__img {
-    width: 100%;
-    height: 55%; }
+    width: 100%; }
+    .location__img > * {
+      width: 100%; }
   .location__price-detail {
     display: flex;
     align-items: baseline;
